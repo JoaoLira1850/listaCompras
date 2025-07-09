@@ -3,7 +3,7 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-// GET: Busca todos os produtos do supermercado
+
 export async function GET() {
     try {
         const produtos = await prisma.produtos_supermercado.findMany({
@@ -19,7 +19,7 @@ export async function GET() {
     }
 }
 
-// POST: Cria um novo produto na lista mestre
+
 export async function POST(request: NextRequest) {
     try {
         const body = await request.json();
@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
     }
 }
 
-// PATCH: Atualiza um produto existente
+
 export async function PATCH(request: NextRequest) {
     try {
         const body = await request.json();
@@ -70,7 +70,7 @@ export async function PATCH(request: NextRequest) {
     }
 }
 
-// DELETE: Exclui um produto da lista mestre
+
 export async function DELETE(request: NextRequest) {
     const { searchParams } = new URL(request.url);
     const id = searchParams.get('id');
@@ -84,13 +84,11 @@ export async function DELETE(request: NextRequest) {
             where: { id: Number(id) },
         });
 
-        return new NextResponse(null, { status: 204 }); // 204 No Content
+        return new NextResponse(null, { status: 204 }); 
 
     } catch (error) {
         console.error("Erro ao excluir produto:", error);
-        
-        // CORREÇÃO: Adicionando uma verificação de tipo para o objeto de erro.
-        // Isso garante ao TypeScript que 'error' é um objeto e possui a propriedade 'code'.
+       
         if (error && typeof error === 'object' && 'code' in error && error.code === 'P2003') {
              return NextResponse.json({ error: 'Este produto não pode ser excluído pois já está em uso em uma ou mais listas de compras.' }, { status: 409 }); // 409 Conflict
         }
