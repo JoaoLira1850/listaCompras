@@ -1,0 +1,125 @@
+
+body{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    min-height: 100hv;
+    justify-content: center;
+    
+    
+}
+
+.Containner{
+    width: 420px;  
+    height: 720px;
+    position: relative;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blue(50px);
+    
+
+}
+
+.minha_lista{
+    margin: 0 0 15px 0 ;
+}
+
+
+
+.corp_items {
+    background-color: #673ab7;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+    align-items: center; 
+    overflow-y:scroll;
+    overflow-x: hidden; 
+    max-height: 550px;
+    height: 550px;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+.corp_items::-webkit-scrollbar {
+    display: none; 
+}
+.card_list{
+    display: flex;
+    background-color: #d3d3d3;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 10px auto;
+    align-items: center;
+    justify-content:space-between ;
+    width: 300px;
+
+}
+
+.tilulo_card{   
+    font-size: 16px;  
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items:flex-end;
+}
+
+.botao{
+    background-color: #1c1c1c;
+    color: white;
+    border-radius: 20px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    
+    
+}
+
+.nova_lista_container{
+    position: absolute;
+    bottom: 150px;
+    right: 55px;
+
+}
+
+.btn_list{
+
+    border: 2px solid rgba(0, 0, 0, .2);
+    background-color: rgba(38, 132, 51, 0.5);
+    border-radius: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color:  rgba(255, 255, 255, 0.5);
+    
+}
+
+.card_info{
+    background-color: #D9D9D9 ;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0 0 ;
+}
+
+.Titulo_da_Lista{
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+

@@ -1,0 +1,124 @@
+
+body{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    min-height: 100hv;
+    justify-content: center;    
+}
+
+.corp{
+
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    margin: 5px 0 0 0;
+    padding: 5px 10px 0px 10px ;
+    height: calc(100vh - 60px);
+    position: relative;
+   
+
+}
+
+.corp_titulo{
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.corp_val{
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    padding: 25px 0px 25px 0px;
+    margin: 5px 0 0 0;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    box-sizing: border-box;
+    
+}
+
+.corp_itens{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: -20px 10px -20px 5px;
+    font-size: 14px;
+
+}
+
+
+
+.btn{
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.corp_produto{
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    padding: 10px 10px 10px 10px;
+    margin: 5px 0 0 0; 
+  
+}
+
+.btn_adc{
+    position: absolute;
+    bottom: 150px;
+    right: 20px;
+}
+.botao_adc{
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    padding: 12px 14px;
+    border-radius: 16px;
+    border: none;
+    font-size: 14px;
+}
+
+.cont_voltar{
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+
+.btn_voltar{
+    background-color: #555;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.list_corp{
+    overflow-y:scroll;
+    overflow-x: hidden; 
+    max-height: 500px;
+    scrollbar-width: none; 
+    -ms-overflow-style: none
+}
+
+.botao_edit{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.botao_cmp{
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    font-size: 10px;
+
+}
