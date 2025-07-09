@@ -34,3 +34,12 @@ model produtos_supermercado{
   categoria String
   produto String
 }
+
+model usuario {
+  id    Int    @id @default(autoincrement())
+  nome  String
+  email String @unique
+  password String
+  sexo String
+  dataCriada DateTime
+}
